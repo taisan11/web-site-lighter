@@ -1,0 +1,14 @@
+{
+  "unstable": ["net","kv","cron"],
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.6.8",
+    "wasm-image-optimization-avif": "npm:wasm-image-optimization-avif@^1.0.0"
+  },
+  "tasks": {
+    "dev": "deno run --watch --allow-net --allow-read main.tsx"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
