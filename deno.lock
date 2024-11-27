@@ -1,23 +1,53 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@hono/hono@^4.6.8": "4.6.8",
+    "jsr:@hono/hono@4": "4.6.12",
+    "npm:@types/node@*": "22.5.4",
+    "npm:std-env@^3.8.0": "3.8.0",
     "npm:wasm-image-optimization-avif@*": "1.0.0",
     "npm:wasm-image-optimization-avif@1": "1.0.0"
   },
   "jsr": {
-    "@hono/hono@4.6.8": {
-      "integrity": "4c92cb895360d93b7bc637c0c3f26449761b2bb160009c0387a37a1d457850f0"
+    "@hono/hono@4.6.12": {
+      "integrity": "fa0b97fa7c3292f0d9957109ac07a475fe485868795b71b8e3114c284152cdb5"
     }
   },
   "npm": {
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "std-env@3.8.0": {
+      "integrity": "sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    },
     "wasm-image-optimization-avif@1.0.0": {
       "integrity": "sha512-OJ0lJC61xQzKH/cpnw2GqD+86hGIRYoNDkzxOGU4oIbcJKwUmlMOH1Mt/0+iTLe8lAvcgNMlVdQM+bqWag4LtQ=="
     }
   },
+  "redirects": {
+    "https://unpkg.com/@ffmpeg/core@0.12.6": "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js",
+    "https://unpkg.com/@ffmpeg/ffmpeg@0.12.6": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js",
+    "https://unpkg.com/@ffmpeg/util": "https://unpkg.com/@ffmpeg/util@0.12.1",
+    "https://unpkg.com/@ffmpeg/util@0.12.1": "https://unpkg.com/@ffmpeg/util@0.12.1/dist/cjs/index.js"
+  },
+  "remote": {
+    "https://esm.sh/@ffmpeg/ffmpeg@0.12.10": "7ebcb5cb6d1dc34b23d9207e79218ecbfdcd860230c3606cd2dc6849aca73ac2",
+    "https://esm.sh/v135/@ffmpeg/ffmpeg@0.12.10/denonext/ffmpeg.mjs": "29374ea84a86db1641f67ec3f298bf38a733aa01775e90bb3248787cab91e4c6",
+    "https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js": "a34873964b0f62aec516bac75e3aa9086ec3535d4d07f0269aa94ea748b6cb71",
+    "https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js": "e7bdad44fe44d0f8fe0c269064333d4281613a0c09ac5d6a07d697120b8021a7",
+    "https://unpkg.com/@ffmpeg/util@0.12.1/dist/cjs/const.js": "29e7064f9fb20a237cb62ac9e7768babed252acc47a2f6a70f343361ee7a6d91",
+    "https://unpkg.com/@ffmpeg/util@0.12.1/dist/cjs/errors.js": "2f1aaccd0fc856dceae0e093005398118926dbc115d42bffff8f5f9be15204c0",
+    "https://unpkg.com/@ffmpeg/util@0.12.1/dist/cjs/index.js": "fc8420a9174b9605520a7df1ab6e532225342fb4fad18e53b119d5c28f774c92"
+  },
   "workspace": {
     "dependencies": [
-      "jsr:@hono/hono@^4.6.8",
+      "jsr:@hono/hono@4",
+      "npm:std-env@^3.8.0",
       "npm:wasm-image-optimization-avif@1"
     ]
   }

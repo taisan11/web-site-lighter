@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import {jsxRenderer} from "hono/jsx-renderer"
 import image from "./image.ts"
+import video from "./video.ts"
 import {logger} from "hono/logger"
 import { secureHeaders } from 'hono/secure-headers'
 
@@ -37,9 +38,13 @@ app.get(
 app.get('/', (c) => {
   return c.render(<>
     <h1>Hello!!</h1>
+    <p><b>image→<code>/image/ImagePath?format=format</code></b></p>
+    <p>format:"avif" | "webp" | "jpeg" | "png"</p>
+    <p><b>video→<code>/video/VideoPath</code></b></p>
   </>)
 })
 
 app.route("/image",image)
+app.route("/video",video)
 
 Deno.serve(app.fetch)
