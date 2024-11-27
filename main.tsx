@@ -37,7 +37,7 @@ app.get(
 
 app.get('/', (c) => {
   return c.render(<>
-    <h1>Hello!!</h1>
+    <h1>Cache API!!</h1>
     <p><b>image→<code>/image/ImagePath?format=format</code></b></p>
     <p>format:"avif" | "webp" | "jpeg" | "png"</p>
     <p><b>video→<code>/video/VideoPath</code></b></p>
