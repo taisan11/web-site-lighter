@@ -1,4 +1,3 @@
 # web-site-lighter
-Webサイトをスクレイピングして軽量なAPIとして提供するOSSです。
-これには明確な保存の意図はありません。
-ただ、GBが厳しい学生によるものです。
+This is an open-source software that scrapes websites and provides them as lightweight APIs.
+There is no intention of permanent storage.
