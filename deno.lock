@@ -1,9 +1,11 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@hono/hono@4": "4.6.12",
+    "jsr:@hono/hono@^4.6.12": "4.6.12",
     "npm:@types/node@*": "22.5.4",
+    "npm:esbuild-wasm@0.24": "0.24.0",
     "npm:std-env@^3.8.0": "3.8.0",
+    "npm:unenv@^1.10.0": "1.10.0",
     "npm:wasm-image-optimization-avif@*": "1.0.0",
     "npm:wasm-image-optimization-avif@1": "1.0.0"
   },
@@ -19,11 +21,39 @@
         "undici-types"
       ]
     },
+    "consola@3.2.3": {
+      "integrity": "sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ=="
+    },
+    "defu@6.1.4": {
+      "integrity": "sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg=="
+    },
+    "esbuild-wasm@0.24.0": {
+      "integrity": "sha512-xhNn5tL1AhkPg4ft59yXT6FkwKXiPSYyz1IeinJHUJpjvOHOIPvdmFQc0pGdjxlKSbzZc2mNmtVOWAR1EF/JAg=="
+    },
+    "mime@3.0.0": {
+      "integrity": "sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A=="
+    },
+    "node-fetch-native@1.6.4": {
+      "integrity": "sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ=="
+    },
+    "pathe@1.1.2": {
+      "integrity": "sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ=="
+    },
     "std-env@3.8.0": {
       "integrity": "sha512-Bc3YwwCB+OzldMxOXJIIvC6cPRWr/LxOp48CdQTOkPyk/t4JWWJbrilwBd7RJzKV8QW7tJkcgAmeuLLJugl5/w=="
     },
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    },
+    "unenv@1.10.0": {
+      "integrity": "sha512-wY5bskBQFL9n3Eca5XnhH6KbUo/tfvkwm9OpcdCvLaeA7piBNbavbOKJySEwQ1V0RH6HvNlSAFRTpvTqgKRQXQ==",
+      "dependencies": [
+        "consola",
+        "defu",
+        "mime",
+        "node-fetch-native",
+        "pathe"
+      ]
     },
     "wasm-image-optimization-avif@1.0.0": {
       "integrity": "sha512-OJ0lJC61xQzKH/cpnw2GqD+86hGIRYoNDkzxOGU4oIbcJKwUmlMOH1Mt/0+iTLe8lAvcgNMlVdQM+bqWag4LtQ=="
@@ -46,8 +76,10 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@hono/hono@4",
+      "jsr:@hono/hono@^4.6.12",
+      "npm:esbuild-wasm@0.24",
       "npm:std-env@^3.8.0",
+      "npm:unenv@^1.10.0",
       "npm:wasm-image-optimization-avif@1"
     ]
   }

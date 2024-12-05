@@ -1,12 +1,14 @@
 {
   "unstable": ["net","kv","cron"],
   "imports": {
-    "hono": "jsr:@hono/hono@^4",
+    "esbuild-wasm": "npm:esbuild-wasm@^0.24.0",
+    "hono": "jsr:@hono/hono@^4.6.12",
     "std-env": "npm:std-env@^3.8.0",
+    "unenv": "npm:unenv@^1.10.0",
     "wasm-image-optimization-avif": "npm:wasm-image-optimization-avif@^1.0.0"
   },
   "tasks": {
-    "dev": "deno run --watch --allow-net --allow-read main.tsx"
+    "dev": "deno run -A --watch main.tsx"
   },
   "compilerOptions": {
     "jsx": "precompile",
