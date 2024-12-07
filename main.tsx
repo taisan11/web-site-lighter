@@ -44,18 +44,18 @@ app.get('/', (c) => {
     <p>format:"avif" | "webp" | "jpeg" | "png"</p>
     <p><b>video→<code>/video/VideoPath</code></b></p>
     <p><b>script(beta)<code>/script/ScriptPath</code></b></p>
-    <h3>Github</h3>
-    <p><b>top page<code>/github</code></b></p>
-    <p><b>user page<code>/github/:username</code></b></p>
-    <p><b>repository page<code>/github/username/repository</code></b></p>
-    <p><b>file page<code>/github/username/repository/path</code></b></p>
-    <p><b>file page(raw)<code>/github/username/repository/path?raw</code></b></p>
+    <h3>Github<code>/gh</code></h3>
+    <p><b>top page<code>/</code></b></p>
+    <p><b>user page<code>/:username</code></b></p>
+    <p><b>repository page<code>/username/repository</code></b></p>
+    <p><b>file page<code>/username/repository/path</code></b></p>
+    <p><b>file page(raw)<code>/username/repository/path?raw</code></b></p>
   </>)
 })
 
 app.route("/image",image)
 app.route("/video",video)
 app.route("/script",script)
-app.route("/github",github)
+app.route("/gh",github)
 
 Deno.serve(app.fetch)

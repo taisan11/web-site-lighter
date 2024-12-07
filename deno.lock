@@ -4,6 +4,7 @@
     "jsr:@hono/hono@^4.6.12": "4.6.12",
     "npm:@types/node@*": "22.5.4",
     "npm:esbuild-wasm@0.24": "0.24.0",
+    "npm:mime@^4.0.4": "4.0.4",
     "npm:std-env@^3.8.0": "3.8.0",
     "npm:unenv@^1.10.0": "1.10.0",
     "npm:wasm-image-optimization-avif@*": "1.0.0",
@@ -33,6 +34,9 @@
     "mime@3.0.0": {
       "integrity": "sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A=="
     },
+    "mime@4.0.4": {
+      "integrity": "sha512-v8yqInVjhXyqP6+Kw4fV3ZzeMRqEW6FotRsKXjRS5VMTNIuXsdRoAvklpoRgSqXm6o9VNH4/C0mgedko9DdLsQ=="
+    },
     "node-fetch-native@1.6.4": {
       "integrity": "sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ=="
     },
@@ -50,7 +54,7 @@
       "dependencies": [
         "consola",
         "defu",
-        "mime",
+        "mime@3.0.0",
         "node-fetch-native",
         "pathe"
       ]
@@ -78,6 +82,7 @@
     "dependencies": [
       "jsr:@hono/hono@^4.6.12",
       "npm:esbuild-wasm@0.24",
+      "npm:mime@^4.0.4",
       "npm:std-env@^3.8.0",
       "npm:unenv@^1.10.0",
       "npm:wasm-image-optimization-avif@1"
